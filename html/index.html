@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css" />
+ 
+</head>
+<body class="bg-secondary">
+
+    <header> 
+        <h1 class="text-center text-white">DelphianLogic in Action</h1>
+        <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo</p>
+    </header>
+    
+    <section class="main ">
+        <div class="container">
+            <div class="accordion" id="modernAccordion">
+                <div class="row equal-height-row justify-content-center">
+                    <div class="col-md-4 equal-height-col pad-y-10 bg-gray-white move-header d-none d-md-block ">
+                    </div>
+
+                    <div class="col-md-4 equal-height-col col-sm-12 bg-fourth text-white move-body">
+                    
+                        <div class="accordion-item" data-src-image="../files/images/DL-learning-1.jpg" >
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="../files/images/DL-learning.svg" class="icon pad-x-2" alt="learning">
+                                    Learning
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#modernAccordion">
+                                <div class="accordion-body text-white bg-fourth text-center ">
+                                    <span class="smaller bg-gray br-5 pad-1 ">DIGITAL LEARNING INFRASTRUCTURE</span>
+                                    <p class="p-large-gap pt-small-gap h5 ">Usability enhancement and Training for Transaction Portal for Customers</p>
+                                    <a href="#">Learn More → </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-src-image="../files/images/DL-technology.jpg" >
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="../files/images/DL-technology.svg" class="icon pad-x-2" alt="technology">    
+                                    Technology
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#modernAccordion">
+                                 <div class="accordion-body text-white bg-fourth text-center ">
+                                    <span class="smaller bg-gray br-5 pad-1 ">DIGITAL LEARNING INFRASTRUCTURE</span>
+                                    <p class="p-large-gap pt-small-gap h5 ">Usability enhancement and Training for Transaction Portal for Customers</p>
+                                    <a href="#">Learn More → </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-src-image="../files/images/DL-communication.jpg" >
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <img src="../files/images/DL-communication.svg" class="icon pad-x-2" alt="communication">        
+                                    Communication
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#modernAccordion">
+                                <div class="accordion-body text-white bg-fourth text-center ">
+                                    <span class="smaller bg-gray br-5 pad-1 ">DIGITAL LEARNING INFRASTRUCTURE</span>
+                                    <p class="p-large-gap pt-small-gap h5 ">Usability enhancement and Training for Transaction Portal for Customers</p>
+                                    <a href="#">Learn More → </a>
+                                </div>
+                            </div>
+                        </div>
+
+    
+                        <!-- Indicators -->
+                        <div class="accordion-indicators">
+                            
+                            <button data-index="0" type="button" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="active" aria-label="Slide 1"></button>
+                            <button data-index="1" type="button" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" aria-label="Slide 2"></button>
+                            <button data-index="2" type="button" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" aria-label="Slide 3"></button>
+                        
+                        </div>
+ 
+
+                    </div>
+                    
+                    <div class="col-md-4 equal-height-col bg-gray-white image-header d-none d-md-block ">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="text-center py-4">
+        Test writen by Swapnil Kamble
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+     <script>
+        // Use a DOMContentLoaded event listener to ensure the script runs after the page is fully loaded.
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Store references to the elements outside the function to avoid re-querying the DOM.
+            const moveHeaderContainer = document.querySelector('.move-header');
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            const indicators = document.querySelectorAll(".accordion-indicators button");
+            const accordions = document.querySelectorAll(".accordion-collapse");
+
+            
+            let accordionItemsPar = document.querySelectorAll('#modernAccordion .accordion-item');
+            let imageHeader = document.querySelector('.image-header');
+
+            // Define the breakpoint for desktop vs. mobile.
+            const breakpoint = 767;
+
+            /**
+             * Moves the accordion headers based on the current window width.
+             */
+            function moveAccordionHeaders() {
+                // Check if the target container exists before proceeding.
+                if (!moveHeaderContainer) {
+                    console.error('The target element with class ".move-header" was not found.');
+                    return;
+                }
+
+                // Check the current window width against the defined breakpoint.
+                if (window.innerWidth > breakpoint) {
+                    // Desktop view: Move all headers to the .move-header container.
+                    accordionHeaders.forEach(header => {
+                        moveHeaderContainer.appendChild(header);
+                    });
+                } else {
+                    // Mobile view: Move all headers back to their original parent (.accordion-item).
+                    accordionHeaders.forEach((header, index) => {
+                        // Get the corresponding accordion-item based on the index.
+                        const originalParent = accordionItems[index];
+
+                        // Get the accordion-collapse div, which is the sibling of the header.
+                        // We will insert the header before this div to put it back in its original position.
+                        const collapseDiv = originalParent.querySelector('.accordion-collapse');
+                        
+                        // Check if both the parent and sibling exist before inserting.
+                        if (originalParent && collapseDiv) {
+                            originalParent.insertBefore(header, collapseDiv);
+                        }
+                    });
+                }
+
+                
+                // Change indicator when accordion is shown
+                accordions.forEach((acc, idx) => {
+                    acc.addEventListener("shown.bs.collapse", function () {
+                        indicators.forEach(btn => btn.classList.remove("active"));
+                        indicators[idx].classList.add("active");
+                    });
+                });
+
+                // Click indicator to open corresponding accordion
+                indicators.forEach((btn, idx) => {
+                    btn.addEventListener("click", function () {
+                        const target = accordions[idx];
+                        const collapse = new bootstrap.Collapse(target, { toggle: true });
+                    });
+                });
+ 
+                document.querySelectorAll('[data-src-image]').forEach(function(div) {
+                    let imgUrl = div.getAttribute('data-src-image');
+                    div.style.backgroundImage = `url('${imgUrl}')`;
+                    div.style.backgroundSize = 'cover';
+                    div.style.backgroundPosition = 'center';
+                });
+
+                 // Function to update header image
+                function updateHeaderImage(activeItem) {
+                    let imgUrl = activeItem.getAttribute('data-src-image');
+                    if (imgUrl) {
+                        imageHeader.style.backgroundImage = `url('${imgUrl}')`;
+                        imageHeader.style.backgroundSize = 'cover';
+                        imageHeader.style.backgroundPosition = 'center';
+                    }
+                }
+                 
+                // Set first shown collapse on page load
+                let firstShown = document.querySelector('.accordion-collapse.show');
+                if (firstShown) {
+                    let firstItem = firstShown.closest('.accordion-item');
+                    updateHeaderImage(firstItem);
+
+                    // Also set first indicator active
+                    indicators.forEach(ind => ind.classList.remove('active'));
+                    indicators[Array.from(accordionItemsPar).indexOf(firstItem)].classList.add('active');
+                }
+
+                // Update header image on accordion show
+                accordionItemsPar.forEach(item => {
+                    let collapse = item.querySelector('.accordion-collapse');
+                    collapse.addEventListener('shown.bs.collapse', function() {
+                        updateHeaderImage(item);
+
+                        // Update indicator active state
+                        indicators.forEach(ind => ind.classList.remove('active'));
+                        indicators[Array.from(accordionItemsPar).indexOf(item)].classList.add('active');
+                    });
+                });
+
+            }
+
+            // Call the function once on page load to set the initial state.
+            moveAccordionHeaders();
+
+            // Add an event listener to run the function whenever the window is resized.
+            window.addEventListener('resize', moveAccordionHeaders);
+        });
+    </script>
+
+
+</body>
+</body>
+</html>

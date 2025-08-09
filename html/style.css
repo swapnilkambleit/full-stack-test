@@ -1,0 +1,332 @@
+:root {
+    /* ===============================
+       FONT FAMILIES
+    =============================== */
+    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Titillium Web', sans-serif;
+    --font-display: sans-serif;
+    --font-handwriting: cursive;
+    --font-monospace: monospace;
+
+    /* ===============================
+       FONT WEIGHTS
+    =============================== */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-ultrabold: 900;
+
+    /* ===============================
+       PARAGRAPG MATGIN 
+    =============================== */ 
+    --p-none: 0;
+    --p-small-gap: 0.5em;
+    --p-medium-gap: 0.75em;
+    --p-large-gap: 1em;
+    
+    /* ===============================
+       BORDER RADIUS
+    =============================== */
+    --br-3: 3px;
+    --br-5: 5px;
+    --br-6: 6px;
+    --br-10: 10px;
+    --br-50: 50%;
+
+    /* ===============================
+       COLORS
+    =============================== */
+    --brand-primary: #c4351e;
+    --brand-secondary: #11324d;
+    --brand-third: #f0b91e;
+    --brand-fourth: #64b4c8;
+    --brand-fifth: #504682;
+    --brand-sixth: #2fb1fc;
+    --gray-darker: #2e3439;
+    --gray-dark: #424242;
+    --gray: #696969;
+    --gray-light: #adadad;
+    --gray-lighter: #d4d3d8;
+    --gray-white: #f6f6f6;
+    --brand-success: #56bd5b;
+    --brand-info: #0099fa;
+    --brand-warning: #f7b422;
+    --brand-danger: #e34c4c;
+    --brand-black: #000000;
+    --brand-white: #ffffff;
+
+    /* ===============================
+       SPACING (Gaps & Padding)
+    =============================== */
+    --gap-1: 5px;
+    --gap-2: 10px;
+    --gap-3: 15px;
+    --gap-4: 20px;
+    --gap-5: 25px;
+    --gap-6: 30px;
+    --gap-7: 40px;
+    --gap-8: 50px;
+    --gap-9: 60px;
+    --gap-10: 70px;
+
+    --pad-1: 5px;
+    --pad-2: 10px;
+    --pad-3: 12px;
+    --pad-4: 15px;
+    --pad-5: 20px;
+    --pad-6: 25px;
+    --pad-7: 30px;
+    --pad-8: 40px;
+    --pad-9: 50px;
+    --pad-10: 60px;
+
+/* =================================
+    FONT SIZES & LINE HEIGHTS - Desktop / Tablet  
+================================== */
+  /* Font sizes */
+  --font-size-smallest: 12px;
+  --font-size-smaller: 13px;
+  --font-size-small: 14px;
+  --font-size-base: 16px;
+  --font-size-big: 18px;
+  --font-size-large: 20px;
+  --font-size-larger: 24px;
+  --font-size-largest: 28px;
+  --font-size-huge: 34px;
+  --font-size-jumbo: 40px;
+  --font-size-giant: 64px;
+  
+  /* Line heights */
+  --line-height-smallest: 1.5;
+  --line-height-smaller: 1.5;
+  --line-height-small: 1.625;
+  --line-height-base: 1.625;
+  --line-height-big: 1.625;
+  --line-height-large: 1.4;
+  --line-height-larger: 1.3;
+  --line-height-largest: 1.3;
+  --line-height-huge: 1.3;
+  --line-height-jumbo: 1.2;
+  --line-height-giant: 1.1;
+
+}
+
+ 
+/* =================================
+    FONT SIZES & LINE HEIGHTS - MOBILE 
+================================== */
+@media (max-width: 768px) {
+    :root {
+    /* Font sizes */
+    --font-size-smallest: 11px;
+    --font-size-smaller: 12px;
+    --font-size-small: 13px;
+    --font-size-base: 14px;
+    --font-size-big: 16px;
+    --font-size-large: 18px;
+    --font-size-larger: 20px;
+    --font-size-largest: 24px;
+    --font-size-huge: 28px;
+    --font-size-jumbo: 30px;
+    --font-size-giant: 36px;
+
+    /* Line heights */
+    --line-height-smallest: 1.5;
+    --line-height-smaller: 1.5;
+    --line-height-small: 1.625;
+    --line-height-base: 1.625;
+    --line-height-big: 1.625;
+    --line-height-large: 1.4;
+    --line-height-larger: 1.3;
+    --line-height-largest: 1.3;
+    --line-height-huge: 1.3;
+    --line-height-jumbo: 1.2;
+    --line-height-giant: 1.1;
+    }
+}
+
+/* ===============================
+    HELPER CLASSES - FONT SIZES & LINE HEIGHTS (Desktop / Tablet / Mobile)
+=============================== */
+/* Paragraph */
+p { font-size: var(--font-size-base); line-height: var(--line-height-base); }
+
+/* small */
+.smallest { font-size: var(--font-size-smallest); line-height: var(--line-height-smallest); }
+.smaller  { font-size: var(--font-size-smaller); line-height: var(--line-height-smaller); }
+.small    { font-size: var(--font-size-small); line-height: var(--line-height-small); }
+
+/* Headings */
+h6 { font-size: var(--font-size-big); line-height: var(--line-height-big); }
+h5 { font-size: var(--font-size-large); line-height: var(--line-height-large); }
+h4 { font-size: var(--font-size-larger); line-height: var(--line-height-larger); }
+h3 { font-size: var(--font-size-largest); line-height: var(--line-height-largest); }
+h2 { font-size: var(--font-size-huge); line-height: var(--line-height-huge); }
+h1 { font-size: var(--font-size-jumbo); line-height: var(--line-height-jumbo); }
+
+/* Optional for giant headings */
+.display-giant { font-size: var(--font-size-giant); line-height: var(--line-height-giant); }
+    
+/* ===============================
+   HELPER CLASSES
+=============================== */
+.gap-1 { gap: var(--gap-1); }
+.gap-2 { gap: var(--gap-2); }
+.gap-3 { gap: var(--gap-3); }
+.gap-4 { gap: var(--gap-4); }
+.gap-5 { gap: var(--gap-5); }
+.gap-6 { gap: var(--gap-6); }
+.gap-7 { gap: var(--gap-7); }
+.gap-8 { gap: var(--gap-8); }
+.gap-9 { gap: var(--gap-9); }
+.gap-10 { gap: var(--gap-10); } 
+
+.pad-1 { padding: var(--pad-1); }
+.pad-2 { padding: var(--pad-2); } 
+.pad-3 { padding: var(--pad-3); } 
+.pad-4 { padding: var(--pad-4); } 
+.pad-5 { padding: var(--pad-5); } 
+.pad-6 { padding: var(--pad-6); } 
+.pad-7 { padding: var(--pad-7); } 
+.pad-8 { padding: var(--pad-8); } 
+.pad-9 { padding: var(--pad-9); } 
+.pad-10 { padding: var(--pad-10); }  
+
+.pad-y-1 { padding-top: var(--pad-1); padding-bottom: var(--pad-1); }
+.pad-y-2 { padding-top: var(--pad-2); padding-bottom: var(--pad-2); }
+.pad-y-3 { padding-top: var(--pad-3); padding-bottom: var(--pad-3); }
+.pad-y-4 { padding-top: var(--pad-4); padding-bottom: var(--pad-4); }
+.pad-y-5 { padding-top: var(--pad-5); padding-bottom: var(--pad-5); }
+.pad-y-6 { padding-top: var(--pad-6); padding-bottom: var(--pad-6); }
+.pad-y-7 { padding-top: var(--pad-7); padding-bottom: var(--pad-7); } 
+.pad-y-8 { padding-top: var(--pad-8); padding-bottom: var(--pad-8); }
+.pad-y-9 { padding-top: var(--pad-9); padding-bottom: var(--pad-9); }
+.pad-y-10 { padding-top: var(--pad-10); padding-bottom: var(--pad-10); }
+
+.pad-x-1 { padding-left: var(--pad-1); padding-right: var(--pad-1); }
+.pad-x-2 { padding-left: var(--pad-2); padding-right: var(--pad-2); }
+.pad-x-3 { padding-left: var(--pad-3); padding-right: var(--pad-3); }
+.pad-x-4 { padding-left: var(--pad-4); padding-right: var(--pad-4); }
+.pad-x-5 { padding-left: var(--pad-5); padding-right: var(--pad-5); }
+.pad-x-6 { padding-left: var(--pad-6); padding-right: var(--pad-6); }
+.pad-x-7 { padding-left: var(--pad-7); padding-right: var(--pad-7); }
+.pad-x-8 { padding-left: var(--pad-8); padding-right: var(--pad-8); }
+.pad-x-9 { padding-left: var(--pad-9); padding-right: var(--pad-9); }
+.pad-x-10 { padding-left: var(--pad-10); padding-right: var(--pad-10); }
+
+/* Border radius helpers */
+.br-3 { border-radius: var(--br-3); }
+.br-5 { border-radius: var(--br-5); }
+.br-6 { border-radius: var(--br-6); }
+.br-10 { border-radius: var(--br-10); }
+.br-50 { border-radius: var(--br-50); } 
+
+/* paragraph bottom margins helpers */
+.p-none { margin-bottom: var(--p-none); }
+.p-small-gap { margin-bottom: var(--p-small-gap); }
+.p-medium-gap { margin-bottom: var(--p-medium-gap); }
+.p-large-gap { margin-bottom: var(--p-large-gap); }
+
+/* paragraph top margins helpers */
+.pt-none { margin-top: var(--p-none); }
+.pt-small-gap { margin-top: var(--p-small-gap); }
+.pt-medium-gap { margin-top: var(--p-medium-gap); }
+.pt-large-gap { margin-top: var(--p-large-gap); }
+
+/* ====== Text Colors ====== */
+.text-primary   { color: var(--brand-primary); }
+.text-secondary { color: var(--brand-secondary); }
+.text-third     { color: var(--brand-third); }
+.text-fourth    { color: var(--brand-fourth); }
+.text-fifth     { color: var(--brand-fifth); }
+.text-sixth     { color: var(--brand-sixth); }
+
+.text-gray-darker  { color: var(--gray-darker); }
+.text-gray-dark    { color: var(--gray-dark); }
+.text-gray         { color: var(--gray); }
+.text-gray-light   { color: var(--gray-light); }
+.text-gray-lighter { color: var(--gray-lighter); }
+.text-gray-white   { color: var(--gray-white); }
+
+.text-success { color: var(--brand-success); }
+.text-info    { color: var(--brand-info); }
+.text-warning { color: var(--brand-warning); }
+.text-danger  { color: var(--brand-danger); }
+
+.text-black { color: var(--brand-black) !important; }
+.text-white { color: var(--brand-white) !important; }
+
+/* ====== Background Colors ====== */
+.bg-primary   { background-color: var(--brand-primary) !important; }
+.bg-secondary { background-color: var(--brand-secondary) !important; }
+.bg-third     { background-color: var(--brand-third) !important; }
+.bg-fourth    { background-color: var(--brand-fourth) !important; }
+.bg-fifth     { background-color: var(--brand-fifth) !important; }
+.bg-sixth     { background-color: var(--brand-sixth) !important; }
+
+.bg-gray-darker  { background-color: var(--gray-darker) !important; }
+.bg-gray-dark    { background-color: var(--gray-dark) !important; }
+.bg-gray         { background-color: var(--gray) !important; }
+.bg-gray-light   { background-color: var(--gray-light) !important; }
+.bg-gray-lighter { background-color: var(--gray-lighter) !important; }
+.bg-gray-white   { background-color: var(--gray-white) !important; }
+
+.bg-success { background-color: var(--brand-success) !important; }
+.bg-info    { background-color: var(--brand-info) !important; }
+.bg-warning { background-color: var(--brand-warning) !important; }
+.bg-danger  { background-color: var(--brand-danger) !important; }
+
+.bg-black { background-color: var(--brand-black) !important; }
+.bg-white { background-color: var(--brand-white) !important; }
+
+ 
+.accordion-header .icon {
+    width: 60px;
+    height: auto; 
+}
+.move-header  .accordion-header{
+    background-color: #ffffff; 
+    margin-bottom: 10px;
+}  
+.accordion-item {
+    border: transparent !important; 
+}  
+.accordion-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+.accordion-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+}
+.accordion-indicators button.active {
+    background-color: #007bff;
+}
+.move-body {
+    padding: 0 !important;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) { 
+    .accordion-body {
+        opacity: 1; 
+        padding: 27% 13%; 
+    } 
+}
+@media (max-width: 768px) { 
+    .accordion-body {
+        opacity: 0.8; 
+        padding: 20% 10%; 
+    } 
+}
